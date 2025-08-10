@@ -81,6 +81,7 @@ local buttonNames = {
     "Auto Kill a todos",
     "Auto Kill a jugadores",
     "Espectear"
+    "Auto comer jugo tropical"
 }
 
 local yPosition = 20
