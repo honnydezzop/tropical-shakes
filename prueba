@@ -9,7 +9,6 @@ local Camera = workspace.CurrentCamera
 getgenv().AutoKillTargets = getgenv().AutoKillTargets or {}
 getgenv().AutoKillEnabled = true
 
-
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "AutoKillMenu"
 screenGui.ResetOnSpawn = false
