@@ -6,6 +6,28 @@ local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 local Camera = workspace.CurrentCamera
 
+local whitelist = {
+    [5379259261] = true,   --//DoritosDezz
+    [7746509309] = true,   --//XxchrisDezzxX
+    [8467123298] = true,   --//humbry5
+    [2983179338] = true,   --//MaykelDezz
+    [2753623031] = true,   --//EddieDezz
+    [3818320344] = true,   --//HonnyDezz
+    [2976707365] = true,   --//HonnyDezz
+    [8794305427] = true,   --//Honnydezz_11
+    [8281527336] = true,   --//MathiKingDezz
+    [3016851016] = true,   --//Arlexuin
+    [1115319547] = true,   --//2shenanagin2
+}
+
+if not whitelist[LocalPlayer.UserId] and not whitelist[LocalPlayer.Name] then
+    local message = Instance.new("Message", workspace)
+    message.Text = "No estás autorizado para usar este script"
+    task.wait(5)
+    message:Destroy()
+    return
+end
+
 getgenv().AutoKillTargets = getgenv().AutoKillTargets or {}
 getgenv().AutoKillEnabled = true
 
